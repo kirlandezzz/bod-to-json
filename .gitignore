@@ -1,0 +1,6 @@
+/bod2json
+*.test
+*.out
+.DS_Store
+.env
+*.ionapi

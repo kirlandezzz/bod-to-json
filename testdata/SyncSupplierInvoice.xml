@@ -1,0 +1,2935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SyncSupplierInvoice xmlns="http://schema.infor.com/InforOAGIS/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" releaseID="9.2" versionID="2.14.5" xsi:schemaLocation="http://schema.infor.com/InforOAGIS/2 http://schema.infor.com/InforOAGIS/BODs/SyncSupplierInvoice.xsd">
+    <ApplicationArea>
+        <Sender>
+            <LogicalID>infor.WLM.1</LogicalID>
+            <ComponentID>WLM</ComponentID>
+            <TaskID>Not Used</TaskID><ConfirmationCode>OnError</ConfirmationCode>
+            <AuthorizationID>joe.smith@infor.com</AuthorizationID>
+        </Sender>
+        <CreationDateTime>2000-12-30</CreationDateTime></ApplicationArea>
+    <DataArea>
+        <Sync>
+            <TenantID>Infor</TenantID>
+            <AccountingEntityID>ae1</AccountingEntityID>
+            <LocationID>loc123</LocationID>
+            <ActionCriteria>
+                <ActionExpression actionCode="Add" expressionLanguage="" /></ActionCriteria>
+        </Sync>
+<SupplierInvoice   >
+    <SupplierInvoiceHeader>
+        <DocumentID>
+            <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            <RevisionID>123</RevisionID>
+        </DocumentID>
+        <AlternateDocumentID>
+            <ID accountingEntity="ae2" location="loc1" variationID="1">ID-101</ID>
+            <RevisionID>123</RevisionID>
+        </AlternateDocumentID>
+        <DisplayID>String</DisplayID>
+        <LastModificationDateTime>2019-01-13</LastModificationDateTime>
+        <LastModificationPerson>
+            <IDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+            </IDs>
+            <Name languageID="en-us">Instance Name</Name>
+        </LastModificationPerson>
+        <DocumentDateTime>2019-01-13T06:56:52Z</DocumentDateTime>
+        <Description languageID="en-us">Description of the associated object</Description>
+        <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+        <DocumentReference type="SalesOrder">
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">SO-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <DisplayID>String</DisplayID>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <LineNumber>Line001</LineNumber>
+            <Facility>
+                <IDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                </IDs>
+                <Name languageID="en-us">Instance Name</Name>
+            </Facility>
+            <ScheduleLineNumber>NormalizedString</ScheduleLineNumber>
+            <SubLineNumber lid="infor.myApp.1">NormalizedString</SubLineNumber>
+        </DocumentReference>
+        <Attachment>
+            <EmbeddedData mimeCode="text">0FB8</EmbeddedData>
+            <FileName>String</FileName>
+            <DocumentDateTime>2019-01-13T06:56:52Z</DocumentDateTime>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <FileType>NormalizedString</FileType>
+            <FileSizeQuantity unitCode="EA">0</FileSizeQuantity>
+            <Title languageID="en-us">Dr.</Title>
+        </Attachment>
+        <ExtendedAmount currencyID="USD">100</ExtendedAmount>
+        <ExtendedBaseAmount currencyID="USD">100</ExtendedBaseAmount>
+        <ExtendedReportAmount currencyID="USD">100</ExtendedReportAmount>
+        <PreSubunitRoundedTotalAmount currencyID="USD">3.0</PreSubunitRoundedTotalAmount>
+        <SubunitRoundingAmount currencyID="USD">3.0</SubunitRoundingAmount>
+        <TotalAmount currencyID="USD">110</TotalAmount>
+        <TotalBaseAmount currencyID="USD">110</TotalBaseAmount>
+        <PrePayment>
+            <PaidAmount currencyID="USD">50</PaidAmount>
+            <PaymentDateTime>2000-12-30</PaymentDateTime>
+            <PaymentReferenceText>String</PaymentReferenceText>
+            <DocumentReference type="SalesOrder">
+                <DocumentID>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">SO-101</ID>
+                    <RevisionID>123</RevisionID>
+                </DocumentID>
+                <DisplayID>String</DisplayID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LineNumber>Line001</LineNumber>
+                <Facility>
+                    <IDs>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                    </IDs>
+                    <Name languageID="en-us">Instance Name</Name>
+                </Facility>
+                <ScheduleLineNumber>NormalizedString</ScheduleLineNumber>
+                <SubLineNumber lid="infor.myApp.1">NormalizedString</SubLineNumber>
+            </DocumentReference>
+        </PrePayment>
+        <TotalReportAmount currencyID="USD">110</TotalReportAmount>
+        <MinimumDueAmount currencyID="USD">3.0</MinimumDueAmount>
+        <MinimumDueBaseAmount currencyID="USD">3.0</MinimumDueBaseAmount>
+        <MinimumDueReportAmount currencyID="USD">3.0</MinimumDueReportAmount>
+        <SupplierParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">Supplier-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+                <EndPointID>NormalizedString</EndPointID>
+            </PartyIDs>
+            <Name languageID="en-us">ABC Supply</Name>
+            <Location type="Warehouse">
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="SalesRep">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <TaxRepresentativeParty>
+                <PartyIDs>
+                    <ID>ID-101</ID>
+                    <TaxID schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <SCACID lid="infor.myApp.1">NormalizedString</SCACID>
+                    <DUNSID>111466152</DUNSID>
+                    <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                    <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                        <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Address>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Location>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+                <Contact languageCode="en-US" type="Requester">
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Name languageID="en-us">Ned Baker</Name>
+                    <Communication preferredIndicator="true" sequence="1">
+                        <ChannelCode>Phone</ChannelCode>
+                        <UseCode listID="Communication Use Codes">Office</UseCode>
+                        <CountryDialing>353</CountryDialing>
+                        <AreaDialing>806</AreaDialing>
+                        <DialNumber>6844941</DialNumber>
+                        <Extension>101</Extension>
+                        <Access>9</Access>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Communication>
+                </Contact>
+            </TaxRepresentativeParty>
+            <SalesContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Sam from Sales</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </SalesContact>
+            <ShippingContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Shirley from Shipping</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </ShippingContact>
+            <CustomerServiceContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Chris the CSR</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </CustomerServiceContact>
+        </SupplierParty>
+        <CustomerParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+                <EndPointID>NormalizedString</EndPointID>
+            </PartyIDs>
+            <Name languageID="en-us">Customer Co.</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Directions languageID="en-us">Directions for the given location</Directions>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <AccountIDs>
+                <ID>ID-101</ID>
+            </AccountIDs>
+            <TaxRepresentativeParty>
+                <PartyIDs>
+                    <ID>ID-101</ID>
+                    <TaxID schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <SCACID lid="infor.myApp.1">NormalizedString</SCACID>
+                    <DUNSID>111466152</DUNSID>
+                    <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                    <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                        <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Address>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Location>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+                <Contact languageCode="en-US" type="Requester">
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Name languageID="en-us">Ned Baker</Name>
+                    <Communication preferredIndicator="true" sequence="1">
+                        <ChannelCode>Phone</ChannelCode>
+                        <UseCode listID="Communication Use Codes">Office</UseCode>
+                        <CountryDialing>353</CountryDialing>
+                        <AreaDialing>806</AreaDialing>
+                        <DialNumber>6844941</DialNumber>
+                        <Extension>101</Extension>
+                        <Access>9</Access>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Communication>
+                </Contact>
+            </TaxRepresentativeParty>
+            <RequesterContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Requester Rene</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </RequesterContact>
+            <PlannerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </PlannerContact>
+            <BuyerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <DepartmentName languageID="en-us">department name</DepartmentName>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </BuyerContact>
+            <ReceivingContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Receiving Rebecca</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </ReceivingContact>
+        </CustomerParty>
+        <RemitToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Remittance Co</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+                <Status>
+                    <Code listID="Location Status">Open</Code>
+                    <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                    <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <FinancialParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <DUNSID>111466152</DUNSID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                    <NationalBankID>NormalizedString</NationalBankID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    </Address>
+                </Location>
+                <ClearingSystemMemberID>NormalizedString</ClearingSystemMemberID>
+                <BranchParty>
+                    <PartyIDs>
+                        <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                        <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                        <DUNSID>111466152</DUNSID>
+                        <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                        <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                        <BICID lid="infor.myApp.1">FordBIC</BICID>
+                        <NationalBankID>NormalizedString</NationalBankID>
+                    </PartyIDs>
+                    <Name languageID="en-us">NE Branch</Name>
+                    <Location type="Warehouse">
+                        <Name languageID="en-us">Name of the Location</Name>
+                        <Address languageCode="en-US">
+                            <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                            <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                            <CityName>San Diego</CityName>
+                            <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                            <CountryCode listID="CountryCode">US</CountryCode>
+                            <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                            <Preference>
+                                <Sequence>1</Sequence>
+                                <Indicator>true</Indicator>
+                            </Preference>
+                        </Address>
+                    </Location>
+                </BranchParty>
+                <FinancialAccount>
+                    <ID>ID-101</ID>
+                    <BBANID>Basic Bank Account Number</BBANID>
+                    <IBANID>International Bank Account Number</IBANID>
+                    <UPICID>NormalizedString</UPICID>
+                    <AccountIDs>
+                        <ID>ID-101</ID>
+                    </AccountIDs>
+                    <CurrencyCode listID="Currency">USD</CurrencyCode>
+                    <Name languageID="en-us">Instance Name</Name>
+                    <Type>NormalizedString</Type>
+                    <Status>
+                        <Code listID="Generic Status">Open</Code>
+                        <ArchiveIndicator>true</ArchiveIndicator>
+                    </Status>
+                </FinancialAccount>
+            </FinancialParty>
+        </RemitToParty>
+        <CreditorParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <CountryCode listID="Countries">US</CountryCode>
+            <BranchParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                    <DUNSID>111466152</DUNSID>
+                    <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                    <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                </PartyIDs>
+                <Name languageID="en-us">NE Branch</Name>
+                <Location type="Warehouse">
+                    <ID accountingEntity="ae2" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Address>
+                </Location>
+            </BranchParty>
+            <FinancialAccount>
+                <ID>ID-101</ID>
+                <BBANID>Basic Bank Account Number</BBANID>
+                <IBANID>International Bank Account Number</IBANID>
+                <CurrencyCode listID="Currency">USD</CurrencyCode>
+                <Name languageID="en-us">Instance Name</Name>
+                <Type>NormalizedString</Type>
+                <Status>
+                    <Code listID="Generic Status">Open</Code>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </FinancialAccount>
+        </CreditorParty>
+        <DebtorParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <CountryCode listID="Countries">US</CountryCode>
+            <BranchParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                    <DUNSID>111466152</DUNSID>
+                    <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                    <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                </PartyIDs>
+                <Name languageID="en-us">NE Branch</Name>
+                <Location type="Warehouse">
+                    <ID accountingEntity="ae2" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                        <Preference>
+                            <Sequence>1</Sequence>
+                            <Indicator>true</Indicator>
+                        </Preference>
+                    </Address>
+                </Location>
+            </BranchParty>
+            <FinancialAccount>
+                <ID>ID-101</ID>
+                <BBANID>Basic Bank Account Number</BBANID>
+                <IBANID>International Bank Account Number</IBANID>
+                <CurrencyCode listID="Currency">USD</CurrencyCode>
+                <Name languageID="en-us">Instance Name</Name>
+                <Type>NormalizedString</Type>
+                <Status>
+                    <Code listID="Generic Status">Open</Code>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </FinancialAccount>
+        </DebtorParty>
+        <StructuredCreditorReference>NormalizedString</StructuredCreditorReference>
+        <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+        <PurchaseOrderReference>
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <ReleaseNumber lid="infor.myApp.1">1</ReleaseNumber>
+            <LineNumber>Line001</LineNumber>
+            <ScheduleLineNumber>NormalizedString</ScheduleLineNumber>
+            <SubLineNumber lid="infor.myApp.1">NormalizedString</SubLineNumber>
+            <PaymentTerm sequence="1" type="Standard">
+                <PaymentTermCode accountingEntity="ae2" listID="Payment Term Codes">N30</PaymentTermCode>
+            </PaymentTerm>
+        </PurchaseOrderReference>
+        <ContractReference>
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <LineNumber>Line001</LineNumber>
+        </ContractReference>
+        <BillingTimePeriod>
+            <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+            <Duration>P1Y2M3DT10H30M</Duration>
+        </BillingTimePeriod>
+        <PaymentTerm sequence="1" type="Standard">
+            <DocumentDateTime>2019-01-13T06:56:52Z</DocumentDateTime>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+            <PaymentTermCode accountingEntity="ae2" listID="Payment Term Codes">N30</PaymentTermCode>
+            <Term type="Payment">
+                <ID accountingEntity="ae2" location="loc1">ID-101</ID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                <AmountBasisCode>Total</AmountBasisCode>
+                <DiscountPercent>3.1415</DiscountPercent>
+                <ProxMonth>1</ProxMonth>
+                <ProxDayOfMonth>15</ProxDayOfMonth>
+                <ProxDayOfWeek>NormalizedString</ProxDayOfWeek>
+            </Term>
+            <Discount>
+                <ID>ID-101</ID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                <AmountBasisCode>Total</AmountBasisCode>
+                <DiscountPercent>3.1415</DiscountPercent>
+            </Discount>
+            <Penalty>
+                <ID>ID-101</ID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                <AmountBasisCode>Total</AmountBasisCode>
+                <SurchargePercent>3.1415</SurchargePercent>
+            </Penalty>
+            <PaymentSchedule sequence="1">
+                <Term type="Payment">
+                    <ID accountingEntity="ae2" location="loc1">ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                    <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                    <AmountBasisCode>Total</AmountBasisCode>
+                    <DiscountPercent>3.1415</DiscountPercent>
+                    <ProxMonth>1</ProxMonth>
+                    <ProxDayOfMonth>15</ProxDayOfMonth>
+                    <ProxDayOfWeek>NormalizedString</ProxDayOfWeek>
+                </Term>
+                <Discount>
+                    <ID>ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                    <AmountBasisCode>Total</AmountBasisCode>
+                    <DiscountPercent>3.1415</DiscountPercent>
+                </Discount>
+                <Penalty>
+                    <ID>ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <DueDateTime>2012-01-13T06:56:52Z</DueDateTime>
+                    <AmountBasisCode>Total</AmountBasisCode>
+                    <SurchargePercent>3.1415</SurchargePercent>
+                </Penalty>
+            </PaymentSchedule>
+        </PaymentTerm>
+        <PaymentMethodCode listID="Payment Methods">ElectronicFundsTransfer</PaymentMethodCode>
+        <PaymentChannelCode>NormalizedString</PaymentChannelCode>
+        <TaxPointDate>2000-12-30</TaxPointDate>
+        <Tax>
+            <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            <TaxJurisdicationCodes>
+                <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+            </TaxJurisdicationCodes>
+            <BasisAmount currencyID="USD">100</BasisAmount>
+            <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <Exemption>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <Type>NormalizedString</Type>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+            </Exemption>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+            <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+            <Amount currencyID="USD">1.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <WithheldIndicator>false</WithheldIndicator>
+            <Distribution>
+                <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+                <Percentage>3</Percentage>
+                <Quantity unitCode="EA">10</Quantity>
+                <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <GLAccount>
+                    <GLNominalAccount>12000</GLNominalAccount>
+                    <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                    <AccountingChartReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                        <Name languageID="en-us">Instance Name</Name>
+                    </AccountingChartReference>
+                    <ChartOfAccountsReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    </ChartOfAccountsReference>
+                </GLAccount>
+                <ProjectReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <ActivityID>NormalizedString</ActivityID>
+                    <ProjectElement>
+                        <ID>ID-101</ID>
+                    </ProjectElement>
+                </ProjectReference>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <UserArea>
+                    
+                </UserArea>
+            </Distribution>
+            <UserArea>
+                
+            </UserArea>
+        </Tax>
+        <Charge sequence="1">
+            <ID>ID-101</ID>
+            <BasisAmount currencyID="USD">100</BasisAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Amount currencyID="USD">10.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <ReasonCode accountingEntity="ae2" listID="Reasons for Charge">Flat Charge</ReasonCode>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <TimePeriod>
+                <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                <EndDateTime>2013-03-16T06:56:52Z</EndDateTime>
+            </TimePeriod>
+            <Name languageID="en-us">name of charge</Name>
+            <Tax>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <TaxJurisdicationCodes>
+                    <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+                </TaxJurisdicationCodes>
+                <BasisAmount currencyID="USD">100</BasisAmount>
+                <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+                <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+                <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+                <Calculation>
+                    <RateNumeric>.02</RateNumeric>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Calculation>
+                <Exemption>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Type>NormalizedString</Type>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <Amount currencyID="USD">52.00</Amount>
+                    <BaseAmount currencyID="USD">52.00</BaseAmount>
+                    <ReportAmount currencyID="USD">52.00</ReportAmount>
+                </Exemption>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <CurrencyExchangeRate>
+                    <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                    <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                    <TargetCurrencyCode>USD</TargetCurrencyCode>
+                    <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                    <RateNumeric>.02</RateNumeric>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                </CurrencyExchangeRate>
+                <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+                <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+                <Amount currencyID="USD">1.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <WithheldIndicator>false</WithheldIndicator>
+            </Tax>
+            <UnitBasisAmount currencyID="USD">0</UnitBasisAmount>
+            <UnitBasisBaseAmount currencyID="USD">3.0</UnitBasisBaseAmount>
+            <UnitBasisReportAmount currencyID="USD">3.0</UnitBasisReportAmount>
+            <UnitAdjustmentAmount currencyID="USD">0</UnitAdjustmentAmount>
+            <UnitAdjustmentBaseAmount currencyID="USD">0</UnitAdjustmentBaseAmount>
+            <UnitAdjustmentReportAmount currencyID="USD">0</UnitAdjustmentReportAmount>
+            <AdjustmentTypeCode>Freight</AdjustmentTypeCode>
+            <AdjustmentGroupCode accountingEntity="ae2" listID="Adjustment Groups">adjustment group code</AdjustmentGroupCode>
+            <CalculationMethodCode listID="Calculation Methods">Flat</CalculationMethodCode>
+            <UnitCode>NormalizedString</UnitCode>
+            <RateCurrency languageID="en-us">0.11</RateCurrency>
+            <GrossWeightIndicator>true</GrossWeightIndicator>
+            <Distribution>
+                <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+                <Percentage>3</Percentage>
+                <Quantity unitCode="EA">10</Quantity>
+                <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <GLAccount>
+                    <GLNominalAccount>12000</GLNominalAccount>
+                    <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                    <AccountingChartReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                        <Name languageID="en-us">Instance Name</Name>
+                    </AccountingChartReference>
+                    <ChartOfAccountsReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    </ChartOfAccountsReference>
+                </GLAccount>
+                <ProjectReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <ActivityID>NormalizedString</ActivityID>
+                    <ProjectElement>
+                        <ID>ID-101</ID>
+                    </ProjectElement>
+                </ProjectReference>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <UserArea>
+                    
+                </UserArea>
+            </Distribution>
+        </Charge>
+        <Allowance>
+            <ID>ID-101</ID>
+            <BasisAmount currencyID="USD">50.00</BasisAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Amount currencyID="USD">-1.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <ReasonCode accountingEntity="ae2" listID="Allowance Reason">NormalizedString</ReasonCode>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <Tax>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <TaxJurisdicationCodes>
+                    <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+                </TaxJurisdicationCodes>
+                <BasisAmount currencyID="USD">100</BasisAmount>
+                <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+                <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+                <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+                <Calculation>
+                    <RateNumeric>.02</RateNumeric>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Calculation>
+                <Exemption>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Type>NormalizedString</Type>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <Amount currencyID="USD">52.00</Amount>
+                    <BaseAmount currencyID="USD">52.00</BaseAmount>
+                    <ReportAmount currencyID="USD">52.00</ReportAmount>
+                </Exemption>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <CurrencyExchangeRate>
+                    <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                    <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                    <TargetCurrencyCode>USD</TargetCurrencyCode>
+                    <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                    <RateNumeric>.02</RateNumeric>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                </CurrencyExchangeRate>
+                <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+                <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+                <Amount currencyID="USD">1.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <WithheldIndicator>false</WithheldIndicator>
+            </Tax>
+        </Allowance>
+        <UserArea>
+            
+        </UserArea>
+        <Status>
+            <Code listID="Supplier Invoice Status">Open</Code>
+            <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+            <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+            <ArchiveIndicator>true</ArchiveIndicator>
+        </Status>
+        <ChargeIndicator>true</ChargeIndicator>
+        <CurrencyExchangeRate>
+            <SourceCurrencyCode>GBP</SourceCurrencyCode>
+            <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+            <TargetCurrencyCode>USD</TargetCurrencyCode>
+            <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+            <RateNumeric>.02</RateNumeric>
+            <EffectiveTimePeriod>
+                <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                <Duration>P1Y2M3DT10H30M</Duration>
+            </EffectiveTimePeriod>
+        </CurrencyExchangeRate>
+        <BaseCurrencyAmount type="TotalAmount">
+            <Amount currencyID="USD">52.00</Amount>
+        </BaseCurrencyAmount>
+        <SelfBillingIndicator>true</SelfBillingIndicator>
+        <ShipToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </ShipToParty>
+        <BillToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <DUNSID>111466152</DUNSID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+                <EndPointID>NormalizedString</EndPointID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <PlannerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </PlannerContact>
+            <BuyerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </BuyerContact>
+        </BillToParty>
+        <BillFromParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+                <EndPointID>NormalizedString</EndPointID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <UserArea>
+                    
+                </UserArea>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </BillFromParty>
+        <PayFromParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <PickUpIndicator>true</PickUpIndicator>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+                <Status>
+                    <Code listID="Location Status">Open</Code>
+                    <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                    <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <FinancialParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <DUNSID>111466152</DUNSID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                    <NationalBankID>NormalizedString</NationalBankID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    </Address>
+                </Location>
+                <ClearingSystemMemberID>NormalizedString</ClearingSystemMemberID>
+                <BranchParty>
+                    <PartyIDs>
+                        <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                        <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                        <DUNSID>111466152</DUNSID>
+                        <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                        <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                        <BICID lid="infor.myApp.1">FordBIC</BICID>
+                        <NationalBankID>NormalizedString</NationalBankID>
+                    </PartyIDs>
+                    <Name languageID="en-us">NE Branch</Name>
+                    <Location type="Warehouse">
+                        <Name languageID="en-us">Name of the Location</Name>
+                        <Address languageCode="en-US">
+                            <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                            <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                            <CityName>San Diego</CityName>
+                            <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                            <CountryCode listID="CountryCode">US</CountryCode>
+                            <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                            <Preference>
+                                <Sequence>1</Sequence>
+                                <Indicator>true</Indicator>
+                            </Preference>
+                        </Address>
+                    </Location>
+                </BranchParty>
+                <FinancialAccount>
+                    <ID>ID-101</ID>
+                    <BBANID>Basic Bank Account Number</BBANID>
+                    <IBANID>International Bank Account Number</IBANID>
+                    <UPICID>NormalizedString</UPICID>
+                    <AccountIDs>
+                        <ID>ID-101</ID>
+                    </AccountIDs>
+                    <CurrencyCode listID="Currency">USD</CurrencyCode>
+                    <Name languageID="en-us">Instance Name</Name>
+                    <Type>NormalizedString</Type>
+                    <Status>
+                        <Code listID="Generic Status">Open</Code>
+                        <ArchiveIndicator>true</ArchiveIndicator>
+                    </Status>
+                </FinancialAccount>
+            </FinancialParty>
+        </PayFromParty>
+        <ShipFromParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </ShipFromParty>
+        <TaxRepresentativeParty>
+            <PartyIDs>
+                <ID>ID-101</ID>
+                <TaxID schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </TaxRepresentativeParty>
+        <ExtendedPretaxAmount currencyID="USD">100</ExtendedPretaxAmount>
+        <ExtendedPretaxBaseAmount currencyID="USD">100.00</ExtendedPretaxBaseAmount>
+        <ExtendedPretaxReportAmount currencyID="USD">100.00</ExtendedPretaxReportAmount>
+        <SubTotalAmount currencyID="USD">100</SubTotalAmount>
+        <SubTotalBaseAmount currencyID="USD">100.00</SubTotalBaseAmount>
+        <SubTotalReportAmount currencyID="USD">100.00</SubTotalReportAmount>
+        <Classification>
+            <Codes>
+                <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+            </Codes>
+            <Description languageID="en-us">Description of the associated object</Description>
+        </Classification>
+        <Distribution>
+            <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+            <Percentage>3</Percentage>
+            <Quantity unitCode="EA">10</Quantity>
+            <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+            <Amount currencyID="USD">52.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <GLAccount>
+                <GLNominalAccount>12000</GLNominalAccount>
+                <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                <AccountingChartReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </AccountingChartReference>
+                <ChartOfAccountsReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                </ChartOfAccountsReference>
+            </GLAccount>
+            <ProjectReference>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <ActivityID>NormalizedString</ActivityID>
+                <ProjectElement>
+                    <ID>ID-101</ID>
+                </ProjectElement>
+            </ProjectReference>
+            <Classification>
+                <Codes>
+                    <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                </Codes>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Classification>
+            <UserArea>
+                
+            </UserArea>
+        </Distribution>
+        <Correction>
+            <OriginalDocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            </OriginalDocumentID>
+            <OriginalTaxPeriod>
+                <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                <EndDateTime>2013-03-16T06:56:52Z</EndDateTime>
+            </OriginalTaxPeriod>
+            <CorrectionMethodCode>NormalizedString</CorrectionMethodCode>
+            <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+            <AdditionalText languageID="en-us">String</AdditionalText>
+        </Correction>
+        <ProtocolNumberText>abc</ProtocolNumberText>
+    </SupplierInvoiceHeader>
+    <SupplierInvoiceLine>
+        <LineNumber>Line001</LineNumber>
+        <Description languageID="en-us">Description of the associated object</Description>
+        <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+        <DocumentReference type="SalesOrder">
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">SO-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <DisplayID>String</DisplayID>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <LineNumber>Line001</LineNumber>
+            <Facility>
+                <IDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                </IDs>
+                <Name languageID="en-us">Instance Name</Name>
+            </Facility>
+            <ScheduleLineNumber>NormalizedString</ScheduleLineNumber>
+            <SubLineNumber lid="infor.myApp.1">NormalizedString</SubLineNumber>
+        </DocumentReference>
+        <Attachment>
+            <EmbeddedData mimeCode="text">0FB8</EmbeddedData>
+            <FileName>String</FileName>
+            <DocumentDateTime>2019-01-13T06:56:52Z</DocumentDateTime>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <FileType>NormalizedString</FileType>
+            <FileSizeQuantity unitCode="EA">0</FileSizeQuantity>
+            <Title languageID="en-us">Dr.</Title>
+        </Attachment>
+        <Item>
+            <ItemID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ItemID1</ID>
+                <RevisionID>123</RevisionID>
+            </ItemID>
+            <UPCID>639382000393</UPCID>
+            <EPCID>urn:epc:tag:sgtin-64:3.0652642.800031.400</EPCID>
+            <GTIN>00012345600012</GTIN>
+            <ServiceIndicator>false</ServiceIndicator>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+            <PartyDescription languageID="en-us">String</PartyDescription>
+            <Classification>
+                <Codes>
+                    <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                </Codes>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Classification>
+            <Specification>
+                <ID lid="infor.myApp.1">Spec-10</ID>
+                <Property sequence="1">
+                    <NameValue currencyID="USD" name="Property Name" type="StringType" unitCode="EA">Property Value</NameValue>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                </Property>
+                <SpecificationType accountingEntity="ae2" languageID="en-us" location="loc1">NormalizedString</SpecificationType>
+                <PLMPrivateIndicator>false</PLMPrivateIndicator>
+            </Specification>
+            <RFID lid="infor.myApp.1">radio frequency id</RFID>
+            <SerialNumber lid="infor.myApp.1">NormalizedString</SerialNumber>
+            <SerializedLot>
+                <ItemQuantity unitCode="EA">10</ItemQuantity>
+                <ItemBaseUOMQuantity unitCode="EA">10</ItemBaseUOMQuantity>
+                <Lot>
+                    <LotIDs>
+                        <ID sequence="1">ID-101</ID>
+                    </LotIDs>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                    <Quantity unitCode="EA">10</Quantity>
+                    <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+                    <AuxiliaryQuantity>3.0</AuxiliaryQuantity>
+                    <SerialNumber lid="infor.myApp.1">NormalizedString</SerialNumber>
+                    <RFID lid="infor.myApp.1">radio frequency id</RFID>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <Disposition>
+                        <Code accountingEntity="ae2">NormalizedString</Code>
+                        <Description languageID="en-us">Description of the associated object</Description>
+                    </Disposition>
+                    <CountryOfOriginCode listID="Countries">US</CountryOfOriginCode>
+                    <CountryAndPercent>
+                        <CountryCode listID="Countries">US</CountryCode>
+                        <Percent>25</Percent>
+                    </CountryAndPercent>
+                    <InventoryCharacteristic>
+                        <Type>NormalizedString</Type>
+                        <StringCharacteristic>String</StringCharacteristic>
+                    </InventoryCharacteristic>
+                </Lot>
+                <Disposition>
+                    <Code accountingEntity="ae2">NormalizedString</Code>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Disposition>
+                <SerialNumber lid="infor.myApp.1">NormalizedString</SerialNumber>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <LotSelection>Any</LotSelection>
+                <FillQuantity unitCode="EA">10</FillQuantity>
+                <FillBaseUOMQuantity unitCode="EA">10</FillBaseUOMQuantity>
+                <ProductionDate>2000-12-30</ProductionDate>
+                <ExpiryDate>2000-12-30</ExpiryDate>
+            </SerializedLot>
+        </Item>
+        <ShipmentDateTime>2009-01-13T06:56:52Z</ShipmentDateTime>
+        <CountryAndPercent>
+            <CountryCode listID="Countries">US</CountryCode>
+            <Percent>25</Percent>
+        </CountryAndPercent>
+        <Quantity unitCode="EA">10</Quantity>
+        <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+        <AuxiliaryQuantity>3.0</AuxiliaryQuantity>
+        <UnitPrice>
+            <Amount currencyID="USD">52.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <PerQuantity unitCode="EA">1</PerQuantity>
+            <PerBaseUOMQuantity unitCode="EA">1</PerBaseUOMQuantity>
+            <Code accountingEntity="ae2" listID="Unit Price Codes">NormalizedString</Code>
+        </UnitPrice>
+        <PurchaseOrderReference>
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <ReleaseNumber lid="infor.myApp.1">1</ReleaseNumber>
+            <LineNumber>Line001</LineNumber>
+            <ScheduleLineNumber>NormalizedString</ScheduleLineNumber>
+            <SubLineNumber lid="infor.myApp.1">NormalizedString</SubLineNumber>
+            <PaymentTerm sequence="1" type="Standard">
+                <PaymentTermCode accountingEntity="ae2" listID="Payment Term Codes">N30</PaymentTermCode>
+            </PaymentTerm>
+        </PurchaseOrderReference>
+        <ExtendedAmount currencyID="USD">100</ExtendedAmount>
+        <ExtendedBaseAmount currencyID="USD">100</ExtendedBaseAmount>
+        <ExtendedReportAmount currencyID="USD">100</ExtendedReportAmount>
+        <TotalAmount currencyID="USD">110</TotalAmount>
+        <TotalBaseAmount currencyID="USD">110</TotalBaseAmount>
+        <TotalReportAmount currencyID="USD">110</TotalReportAmount>
+        <OpenItemIndicator>true</OpenItemIndicator>
+        <TaxPointDate>2000-12-30</TaxPointDate>
+        <Tax>
+            <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            <TaxJurisdicationCodes>
+                <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+            </TaxJurisdicationCodes>
+            <BasisAmount currencyID="USD">100</BasisAmount>
+            <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <Exemption>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <Type>NormalizedString</Type>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+            </Exemption>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+            <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+            <Amount currencyID="USD">1.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <WithheldIndicator>false</WithheldIndicator>
+            <Distribution>
+                <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+                <Percentage>3</Percentage>
+                <Quantity unitCode="EA">10</Quantity>
+                <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <GLAccount>
+                    <GLNominalAccount>12000</GLNominalAccount>
+                    <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                    <AccountingChartReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                        <Name languageID="en-us">Instance Name</Name>
+                    </AccountingChartReference>
+                    <ChartOfAccountsReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    </ChartOfAccountsReference>
+                </GLAccount>
+                <ProjectReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <ActivityID>NormalizedString</ActivityID>
+                    <ProjectElement>
+                        <ID>ID-101</ID>
+                    </ProjectElement>
+                </ProjectReference>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <UserArea>
+                    
+                </UserArea>
+            </Distribution>
+            <UserArea>
+                
+            </UserArea>
+        </Tax>
+        <InvoiceCharge sequence="1">
+            <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            <BasisAmount currencyID="USD">100</BasisAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Amount currencyID="USD">52.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <Name languageID="en-us">Instance Name</Name>
+            <Tax>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <TaxJurisdicationCodes>
+                    <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+                </TaxJurisdicationCodes>
+                <BasisAmount currencyID="USD">100</BasisAmount>
+                <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+                <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+                <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+                <Calculation>
+                    <RateNumeric>.02</RateNumeric>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Calculation>
+                <Exemption>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Type>NormalizedString</Type>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <Amount currencyID="USD">52.00</Amount>
+                    <BaseAmount currencyID="USD">52.00</BaseAmount>
+                    <ReportAmount currencyID="USD">52.00</ReportAmount>
+                </Exemption>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <CurrencyExchangeRate>
+                    <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                    <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                    <TargetCurrencyCode>USD</TargetCurrencyCode>
+                    <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                    <RateNumeric>.02</RateNumeric>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                </CurrencyExchangeRate>
+                <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+                <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+                <Amount currencyID="USD">1.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <WithheldIndicator>false</WithheldIndicator>
+            </Tax>
+            <UnitBasisBaseAmount currencyID="USD">3.0</UnitBasisBaseAmount>
+            <UnitBasisReportAmount currencyID="USD">3.0</UnitBasisReportAmount>
+            <UnitAdjustmentBaseAmount currencyID="USD">0</UnitAdjustmentBaseAmount>
+            <UnitAdjustmentReportAmount currencyID="USD">0</UnitAdjustmentReportAmount>
+            <MinimumChargeBaseAmount currencyID="USD">3.0</MinimumChargeBaseAmount>
+            <MinimumChargeReportAmount currencyID="USD">3.0</MinimumChargeReportAmount>
+            <Distribution>
+                <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+                <Percentage>3</Percentage>
+                <Quantity unitCode="EA">10</Quantity>
+                <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <GLAccount>
+                    <GLNominalAccount>12000</GLNominalAccount>
+                    <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                    <AccountingChartReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                        <Name languageID="en-us">Instance Name</Name>
+                    </AccountingChartReference>
+                    <ChartOfAccountsReference>
+                        <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    </ChartOfAccountsReference>
+                </GLAccount>
+                <ProjectReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <ActivityID>NormalizedString</ActivityID>
+                    <ProjectElement>
+                        <ID>ID-101</ID>
+                    </ProjectElement>
+                </ProjectReference>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <UserArea>
+                    
+                </UserArea>
+            </Distribution>
+        </InvoiceCharge>
+        <InvoiceAllowance sequence="1">
+            <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+            <BasisAmount currencyID="USD">100</BasisAmount>
+            <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+            <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Amount currencyID="USD">52.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <Calculation>
+                <RateNumeric>.02</RateNumeric>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Calculation>
+            <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <Name languageID="en-us">Instance Name</Name>
+            <Tax>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                <TaxJurisdicationCodes>
+                    <Code accountingEntity="ae2" listID="Tax Jurisdiction Codes">10</Code>
+                </TaxJurisdicationCodes>
+                <BasisAmount currencyID="USD">100</BasisAmount>
+                <BasisTaxAuthorityAmount currencyID="USD">3.0</BasisTaxAuthorityAmount>
+                <BasisBaseAmount currencyID="USD">100.00</BasisBaseAmount>
+                <BasisReportAmount currencyID="USD">100.00</BasisReportAmount>
+                <Calculation>
+                    <RateNumeric>.02</RateNumeric>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Calculation>
+                <Exemption>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Type>NormalizedString</Type>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                    <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                    <Amount currencyID="USD">52.00</Amount>
+                    <BaseAmount currencyID="USD">52.00</BaseAmount>
+                    <ReportAmount currencyID="USD">52.00</ReportAmount>
+                </Exemption>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+                <CurrencyExchangeRate>
+                    <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                    <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                    <TargetCurrencyCode>USD</TargetCurrencyCode>
+                    <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                    <RateNumeric>.02</RateNumeric>
+                    <EffectiveTimePeriod>
+                        <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                        <Duration>P1Y2M3DT10H30M</Duration>
+                    </EffectiveTimePeriod>
+                </CurrencyExchangeRate>
+                <TaxAuthorityAmount currencyID="USD">1</TaxAuthorityAmount>
+                <TaxAuthorityBaseAmount currencyID="USD">3.0</TaxAuthorityBaseAmount>
+                <Amount currencyID="USD">1.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+                <WithheldIndicator>false</WithheldIndicator>
+            </Tax>
+            <UnitAdjustmentReportAmount currencyID="USD">0</UnitAdjustmentReportAmount>
+        </InvoiceAllowance>
+        <UserArea>
+            
+        </UserArea>
+        <RequestedDeliveryDate>2008-04-24</RequestedDeliveryDate>
+        <SupplierParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">Supplier-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">ABC Supply</Name>
+            <Location type="Warehouse">
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="SalesRep">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <SalesContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Sam from Sales</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </SalesContact>
+            <ShippingContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Shirley from Shipping</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </ShippingContact>
+            <CustomerServiceContact>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Chris the CSR</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </CustomerServiceContact>
+        </SupplierParty>
+        <CustomerParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Customer Co.</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Directions languageID="en-us">Directions for the given location</Directions>
+                <Address languageCode="en-US">
+                    <FormatCode listID="AddressFormatCodes">US Formatted Address</FormatCode>
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CitySubDivisionName>La Jolla</CitySubDivisionName>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <AccountIDs>
+                <ID>ID-101</ID>
+            </AccountIDs>
+            <RequesterContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Requester Rene</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </RequesterContact>
+            <PlannerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </PlannerContact>
+            <BuyerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <DepartmentName languageID="en-us">department name</DepartmentName>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </BuyerContact>
+            <ReceivingContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Receiving Rebecca</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </ReceivingContact>
+        </CustomerParty>
+        <SalesOrderReference>
+            <DocumentID>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <RevisionID>123</RevisionID>
+            </DocumentID>
+            <DocumentDateTime>2019-01-13T06:56:52Z</DocumentDateTime>
+            <Description languageID="en-us">Description of the associated object</Description>
+            <Note author="Jane Smith" entryDateTime="2012-01-13T06:56:52Z" languageID="en-us" status="Open" type="General" use="Internal">A free form note</Note>
+            <ReleaseNumber lid="infor.myApp.1">1</ReleaseNumber>
+            <LineNumber>Line001</LineNumber>
+            <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+        </SalesOrderReference>
+        <ExtendedCost>
+            <Amount currencyID="USD">52.00</Amount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <CurrencyExchangeRate>
+                <SourceCurrencyCode>GBP</SourceCurrencyCode>
+                <SourceUnitBaseNumeric>1</SourceUnitBaseNumeric>
+                <TargetCurrencyCode>USD</TargetCurrencyCode>
+                <TargetUnitBaseNumeric>1</TargetUnitBaseNumeric>
+                <RateNumeric>.02</RateNumeric>
+                <EffectiveTimePeriod>
+                    <StartDateTime>2012-01-13T06:56:52Z</StartDateTime>
+                    <Duration>P1Y2M3DT10H30M</Duration>
+                </EffectiveTimePeriod>
+            </CurrencyExchangeRate>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ExtendedCostDistribution>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <Amount currencyID="USD">52.00</Amount>
+                <BaseAmount currencyID="USD">52.00</BaseAmount>
+                <ReportAmount currencyID="USD">52.00</ReportAmount>
+            </ExtendedCostDistribution>
+        </ExtendedCost>
+        <BaseCurrencyAmount type="TotalAmount">
+            <Amount currencyID="USD">52.00</Amount>
+        </BaseCurrencyAmount>
+        <ShipToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </ShipToParty>
+        <BillToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <DUNSID>111466152</DUNSID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <PlannerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </PlannerContact>
+            <BuyerContact languageCode="en-US">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Instance Name</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </BuyerContact>
+        </BillToParty>
+        <PayFromParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <PickUpIndicator>true</PickUpIndicator>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+                <Status>
+                    <Code listID="Location Status">Open</Code>
+                    <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                    <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <FinancialParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <DUNSID>111466152</DUNSID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                    <NationalBankID>NormalizedString</NationalBankID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    </Address>
+                </Location>
+                <ClearingSystemMemberID>NormalizedString</ClearingSystemMemberID>
+                <BranchParty>
+                    <PartyIDs>
+                        <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                        <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                        <DUNSID>111466152</DUNSID>
+                        <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                        <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                        <BICID lid="infor.myApp.1">FordBIC</BICID>
+                        <NationalBankID>NormalizedString</NationalBankID>
+                    </PartyIDs>
+                    <Name languageID="en-us">NE Branch</Name>
+                    <Location type="Warehouse">
+                        <Name languageID="en-us">Name of the Location</Name>
+                        <Address languageCode="en-US">
+                            <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                            <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                            <CityName>San Diego</CityName>
+                            <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                            <CountryCode listID="CountryCode">US</CountryCode>
+                            <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                            <Preference>
+                                <Sequence>1</Sequence>
+                                <Indicator>true</Indicator>
+                            </Preference>
+                        </Address>
+                    </Location>
+                </BranchParty>
+                <FinancialAccount>
+                    <ID>ID-101</ID>
+                    <BBANID>Basic Bank Account Number</BBANID>
+                    <IBANID>International Bank Account Number</IBANID>
+                    <UPICID>NormalizedString</UPICID>
+                    <AccountIDs>
+                        <ID>ID-101</ID>
+                    </AccountIDs>
+                    <CurrencyCode listID="Currency">USD</CurrencyCode>
+                    <Name languageID="en-us">Instance Name</Name>
+                    <Type>NormalizedString</Type>
+                    <Status>
+                        <Code listID="Generic Status">Open</Code>
+                        <ArchiveIndicator>true</ArchiveIndicator>
+                    </Status>
+                </FinancialAccount>
+            </FinancialParty>
+        </PayFromParty>
+        <ShipFromParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Instance Name</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+        </ShipFromParty>
+        <RemitToParty>
+            <PartyIDs>
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                <DUNSID>111466152</DUNSID>
+                <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                <BICID lid="infor.myApp.1">FordBIC</BICID>
+            </PartyIDs>
+            <Name languageID="en-us">Remittance Co</Name>
+            <Location type="Warehouse">
+                <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                <Name languageID="en-us">Name of the Location</Name>
+                <Address languageCode="en-US">
+                    <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                    <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                    <CityName>San Diego</CityName>
+                    <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                    <CountryCode listID="CountryCode">US</CountryCode>
+                    <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Address>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <LogisticsLocation>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </LogisticsLocation>
+                <Classification>
+                    <Codes>
+                        <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                    </Codes>
+                    <Description languageID="en-us">Description of the associated object</Description>
+                </Classification>
+                <VirtualLocationIndicator>false</VirtualLocationIndicator>
+                <Status>
+                    <Code listID="Location Status">Open</Code>
+                    <EffectiveDateTime>2012-01-13T06:56:52Z</EffectiveDateTime>
+                    <ReasonCode accountingEntity="ae2">NormalizedString</ReasonCode>
+                    <ArchiveIndicator>true</ArchiveIndicator>
+                </Status>
+            </Location>
+            <Communication preferredIndicator="true" sequence="1">
+                <ChannelCode>Phone</ChannelCode>
+                <UseCode listID="Communication Use Codes">Office</UseCode>
+                <CountryDialing>353</CountryDialing>
+                <AreaDialing>806</AreaDialing>
+                <DialNumber>6844941</DialNumber>
+                <Extension>101</Extension>
+                <Access>9</Access>
+                <Preference>
+                    <Sequence>1</Sequence>
+                    <Indicator>true</Indicator>
+                </Preference>
+            </Communication>
+            <Contact languageCode="en-US" type="Requester">
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Name languageID="en-us">Ned Baker</Name>
+                <Communication preferredIndicator="true" sequence="1">
+                    <ChannelCode>Phone</ChannelCode>
+                    <UseCode listID="Communication Use Codes">Office</UseCode>
+                    <CountryDialing>353</CountryDialing>
+                    <AreaDialing>806</AreaDialing>
+                    <DialNumber>6844941</DialNumber>
+                    <Extension>101</Extension>
+                    <Access>9</Access>
+                    <Preference>
+                        <Sequence>1</Sequence>
+                        <Indicator>true</Indicator>
+                    </Preference>
+                </Communication>
+            </Contact>
+            <FinancialParty>
+                <PartyIDs>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                    <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                    <DUNSID>111466152</DUNSID>
+                    <BICID lid="infor.myApp.1">FordBIC</BICID>
+                    <NationalBankID>NormalizedString</NationalBankID>
+                </PartyIDs>
+                <Name languageID="en-us">Instance Name</Name>
+                <Location type="Warehouse">
+                    <Name languageID="en-us">Name of the Location</Name>
+                    <Address languageCode="en-US">
+                        <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                        <CityName>San Diego</CityName>
+                        <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                        <CountryCode listID="CountryCode">US</CountryCode>
+                        <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                    </Address>
+                </Location>
+                <ClearingSystemMemberID>NormalizedString</ClearingSystemMemberID>
+                <BranchParty>
+                    <PartyIDs>
+                        <TaxID lid="infor.myApp.1" schemeAgencyName="Taxing Agency">F159Btax</TaxID>
+                        <SCACID lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</SCACID>
+                        <DUNSID>111466152</DUNSID>
+                        <CAGEID lid="infor.myApp.1">43DH3</CAGEID>
+                        <DODAACID lid="infor.myApp.1">FordDOD</DODAACID>
+                        <BICID lid="infor.myApp.1">FordBIC</BICID>
+                        <NationalBankID>NormalizedString</NationalBankID>
+                    </PartyIDs>
+                    <Name languageID="en-us">NE Branch</Name>
+                    <Location type="Warehouse">
+                        <Name languageID="en-us">Name of the Location</Name>
+                        <Address languageCode="en-US">
+                            <AttentionOfName languageID="en-us">Bill Ford</AttentionOfName>
+                            <AddressLine languageID="en-us" sequence="1">1 American Road</AddressLine>
+                            <CityName>San Diego</CityName>
+                            <CountrySubDivisionCode listID="US States">MI</CountrySubDivisionCode>
+                            <CountryCode listID="CountryCode">US</CountryCode>
+                            <PostalCode accountingEntity="ae2" listID="PostalCode">48123</PostalCode>
+                            <Preference>
+                                <Sequence>1</Sequence>
+                                <Indicator>true</Indicator>
+                            </Preference>
+                        </Address>
+                    </Location>
+                </BranchParty>
+                <FinancialAccount>
+                    <ID>ID-101</ID>
+                    <BBANID>Basic Bank Account Number</BBANID>
+                    <IBANID>International Bank Account Number</IBANID>
+                    <UPICID>NormalizedString</UPICID>
+                    <AccountIDs>
+                        <ID>ID-101</ID>
+                    </AccountIDs>
+                    <CurrencyCode listID="Currency">USD</CurrencyCode>
+                    <Name languageID="en-us">Instance Name</Name>
+                    <Type>NormalizedString</Type>
+                    <Status>
+                        <Code listID="Generic Status">Open</Code>
+                        <ArchiveIndicator>true</ArchiveIndicator>
+                    </Status>
+                </FinancialAccount>
+            </FinancialParty>
+        </RemitToParty>
+        <PricingBaseAmount currencyID="USD">3.0</PricingBaseAmount>
+        <PricingReportAmount currencyID="USD">3.0</PricingReportAmount>
+        <OrderLineTypeCode>NormalizedString</OrderLineTypeCode>
+        <OrderLineCategoryCode>NormalizedString</OrderLineCategoryCode>
+        <CorrectedLineIndicator>false</CorrectedLineIndicator>
+        <LinkedLineNumber>NormalizedString</LinkedLineNumber>
+        <Distribution>
+            <LedgerID accountingEntity="ae2" lid="infor.myApp.1" location="loc1" variationID="1">NormalizedString</LedgerID>
+            <Percentage>3</Percentage>
+            <Quantity unitCode="EA">10</Quantity>
+            <BaseUOMQuantity unitCode="EA">96</BaseUOMQuantity>
+            <Amount currencyID="USD">52.00</Amount>
+            <BaseAmount currencyID="USD">52.00</BaseAmount>
+            <ReportAmount currencyID="USD">52.00</ReportAmount>
+            <GLAccount>
+                <GLNominalAccount>12000</GLNominalAccount>
+                <GLNominalAccountName languageID="en-us">String</GLNominalAccountName>
+                <AccountingChartReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1">ID-101</ID>
+                    <Name languageID="en-us">Instance Name</Name>
+                </AccountingChartReference>
+                <ChartOfAccountsReference>
+                    <ID accountingEntity="ae2" lid="infor.myApp.1" variationID="1">ID-101</ID>
+                </ChartOfAccountsReference>
+            </GLAccount>
+            <ProjectReference>
+                <ID accountingEntity="ae2" lid="infor.myApp.1" location="loc1">ID-101</ID>
+                <Description languageID="en-us">Description of the associated object</Description>
+                <ActivityID>NormalizedString</ActivityID>
+                <ProjectElement>
+                    <ID>ID-101</ID>
+                </ProjectElement>
+            </ProjectReference>
+            <Classification>
+                <Codes>
+                    <Code accountingEntity="ae2" listID="ClassificationCodes" sequence="1">CustomerType</Code>
+                </Codes>
+                <Description languageID="en-us">Description of the associated object</Description>
+            </Classification>
+            <UserArea>
+                
+            </UserArea>
+        </Distribution>
+    </SupplierInvoiceLine>
+</SupplierInvoice>
+</DataArea>
+</SyncSupplierInvoice>
