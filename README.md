@@ -102,6 +102,7 @@ invoice.go            parse, validate, idempotency key
 client.go             token, post, retry
 cmd/bod2json/         command-line tool
 testdata/             Infor's public sample BOD (see testdata/README.md)
+.github/workflows/    CI: gofmt, go vet, go test -race
 ```
 
 ## Licence
